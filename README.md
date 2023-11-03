@@ -1,2 +1,2 @@
-# Creative Portfolio
-Built with tailpages
+# 'Folio
+simple portfolio built with Jekyll, Liquid, HTML, and TailwindCSS

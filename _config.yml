@@ -1,10 +1,8 @@
-# change the followings to match your Github username and repo name
-baseurl: "/folio" # the name of your github repo
-url: "https://azycat.github.io" # the url of your github pages
-
 # site information used in page title, meta data etc.
-title: "creative portfolio"
-description: azycat/folio
+title: "azycat"
+description: azycat's portfolio
+baseurl: ""
+url: "https://azycat.github.io"
 
 # color theme for links
 theme-color: pink # indigo|yellow|pink|green|stone|
@@ -44,8 +42,18 @@ footer-msg: "azycat"
 footer-msg-link: false
 
 # google analytics
-google-analytics: G-WCRC1TC2V5
+# google-analytics: insert-ID-here
 
-# jekyll plugins - no need to change
 plugins:
     - jekyll-seo-tag
+
+include:
+  - _pages
+
+exclude:
+  - .jekyll-cache/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
