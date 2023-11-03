@@ -1,7 +1,7 @@
 # site information used in page title, meta data etc.
 title: "azycat"
 description: azycat's portfolio
-baseurl: ""
+baseurl: "/folio"
 url: "https://azycat.github.io"
 
 # color theme for links
