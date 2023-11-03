@@ -16,8 +16,7 @@
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   
     <!-- highlight.js -->
-   <link rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark-dimmed.min.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/github-dark-dimmed.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
   
@@ -35,11 +34,10 @@
     {% include head/custom.html %}
  </head>
 
-<body class="font-sans mx-auto max-w-prose">
+<body class="mx-auto max-w-prose">
   <div class="pt-12 pb-4">
     {{ content }}
   </div>
-
 </body>
 
 <script>
@@ -82,11 +80,12 @@
 <script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
     <script data-no-instant>
       InstantClick.on("change", () => {
+        hljs.highlightAll();
         // support markdown rendering
         const prose = document.getElementsByClassName("prose")[0];
 
         // handle nav
-        const menu = document.getElementByID("navbar")[0];
+        const menu = document.getElementById("navbar");
         menu.addEventListener("click", () => {
           menu.classList.toggle("hidden");
           menu.classList.toggle("block");

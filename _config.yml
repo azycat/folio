@@ -16,8 +16,6 @@ author-image: 56982188.jpg  # file must be in the /assets/img/ folder
 show-nav-menu: true
 
 nav-menu:
-- text: About
-  permalink: about
 - text: Projects
   permalink: projects
 
