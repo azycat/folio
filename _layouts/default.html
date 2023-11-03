@@ -40,21 +40,6 @@
     {{ content }}
   </div>
 
-<script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
-    <script data-no-instant>
-      InstantClick.on("change", () => {
-        // handle nav
-        const links = document.getElementByID("navbar")[0];
-        const nav = document.getElementsByClassName("mobile-nav")[0];
-        links.addEventListener("click", () => {
-          links.classList.toggle("hidden");
-          nav.classList.toggle("hidden");
-          nav.classList.toggle("block");
-        });
-      });
-
-      InstantClick.init("mousedown");
-    </script>
 </body>
 
 <script>
@@ -92,5 +77,22 @@
             toc.style.display = "block";
         }
     }
+</script>
+
+<script src="{{ site.baseurl }}/assets/js/instantclick.min.js" data-no-instant></script>
+    <script data-no-instant>
+      InstantClick.on("change", () => {
+        // support markdown rendering
+        const prose = document.getElementsByClassName("prose")[0];
+
+        // handle nav
+        const menu = document.getElementByID("navbar")[0];
+        menu.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          menu.classList.toggle("block");
+        });
+      });
+
+      InstantClick.init("mousedown");
 </script>
 </html>
