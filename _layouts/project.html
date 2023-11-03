@@ -6,12 +6,12 @@ layout: default
 <img
   loading="lazy"
   src="/assets/images/projects/{{ page.name | remove: '.md' }}.webp"
-  class="mx-auto rounded-xl{% if page.ignorePreviewAspect != true %} sm:aspect-video{% endif %}"
+  class="rounded-xl{% if page.ignorePreviewAspect != true %} sm:aspect-video{% endif %} mx-auto"
 />
 {% elsif page.youtube %}
 <iframe
   src="https://www.youtube.com/embed/{{ page.youtube }}"
-  class="w-full aspect-video rounded-xl"
+  class="aspect-video w-full rounded-xl"
   allowfullscreen
   loading="lazy"
 >
@@ -21,7 +21,7 @@ layout: default
 <img
   loading="lazy"
   src="{{ image }}"
-  class="mx-auto sm:aspect-video rounded-xl"
+  class="mx-auto rounded-xl sm:aspect-video"
 />
 {% endif %} {% assign project = site.data.projects[page.slug] %}
 <h2 class="mt-10 font-black">{{ project.name }}</h2>
@@ -34,11 +34,11 @@ layout: default
 </div>
 
 {% if page.visit %}
-<div class="mt-8 flex flex-col sm:flex-row items-center justify-center">
+<div class="mt-8 flex flex-col items-center justify-center sm:flex-row">
   {% for item in page.visit %}
   <a
     href="{{ item.link }}"
-    class="{% if forloop.first != true %}mt-4 sm:mt-0 {% endif %}mx-2 px-3 py-2 link-button"
+    class="{% if forloop.first != true %}mt-4 {% endif %}mx-2 link-button px-3 py-2 sm:mt-0"
   >
     {{ item.anchorText }} &gt;
   </a>
@@ -46,5 +46,5 @@ layout: default
 </div>
 {% endif %} {% assign content = page.content | strip_newlines %} {% if content
 != "" %}
-<div class="mt-10 content">{{ page.content }}</div>
+<div class="content mt-10">{{ page.content }}</div>
 {% endif %}

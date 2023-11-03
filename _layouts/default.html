@@ -1,97 +1,113 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>{{ site.title }}</title>
+    <!-- TailwindCSS -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-  <!-- TailwindCSS -->
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
 
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  
     <!-- highlight.js -->
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/github-dark-dimmed.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
-  
-  <!-- MathJax -->
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      },
-    };
-  </script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{site.baseurl}}/assets/css/github-dark-dimmed.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll()
+    </script>
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)']
+          ]
+        }
+      }
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
 
     {% include head/custom.html %}
- </head>
+  </head>
 
-<body class="mx-auto max-w-prose">
-  <div class="pt-12 pb-4">
-    {{ content }}
-  </div>
-</body>
+  <body class="mx-auto max-w-prose">
+    <div class="pb-4 pt-12">{{ content }}</div>
 
-<script>
-  /* Funtion for getting the current year in the footer */
-  (function () {
-    if (document.getElementById("get-current-year")) {
-      document.getElementById(
-        "get-current-year"
-      ).innerHTML = new Date().getFullYear();
-    }
-  })();
+    <script
+      src="{{site.baseurl}}/assets/js/instantclick.min.js"
+      data-no-instant
+    ></script>
+    <script data-no-instant>
+      InstantClick.on('change', () => {
+        hljs.highlightAll()
+        // support markdown rendering
+        const prose = document.getElementsByClassName('prose')[0]
 
-  /* Function for opning navbar on mobile */
-  function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("block");
+        // handle nav
+        const menu = document.getElementById('navbar')
+        menu.addEventListener('click', () => {
+          menu.classList.toggle('hidden')
+          menu.classList.toggle('block')
+        })
+      })
+
+      InstantClick.init('mousedown')
+    </script>
+  </body>
+
+  <script>
+    /* Funtion for getting the current year in the footer */
+    ;(function () {
+      if (document.getElementById('get-current-year')) {
+        document.getElementById('get-current-year').innerHTML =
+          new Date().getFullYear()
+      }
+    })()
+
+    /* Function for opning navbar on mobile */
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle('hidden')
+      document.getElementById(collapseID).classList.toggle('block')
     }
     /* Function for dropdowns */
     function openDropdown(event, dropdownID) {
-      let element = event.target;
-      while (element.nodeName !== "A") {
-        element = element.parentNode;
+      let element = event.target
+      while (element.nodeName !== 'A') {
+        element = element.parentNode
       }
-      document.getElementById(dropdownID).classList.toggle("hidden");
-      document.getElementById(dropdownID).classList.toggle("block");
+      document.getElementById(dropdownID).classList.toggle('hidden')
+      document.getElementById(dropdownID).classList.toggle('block')
     }
 
-  /* Function for show/hide table of content */
-  function toggleTOC() {
-    var toc = document.getElementById('toc');
-        if (toc.style.display == "block"){ // if toc hidden, display it 
-            toc.style.display = "none";
-        }
-        else{ // if toc displayed, hidden it
-            toc.style.display = "block";
-        }
+    /* Function for show/hide table of content */
+    function toggleTOC() {
+      var toc = document.getElementById('toc')
+      if (toc.style.display == 'block') {
+        // if toc hidden, display it
+        toc.style.display = 'none'
+      } else {
+        // if toc displayed, hidden it
+        toc.style.display = 'block'
+      }
     }
-</script>
-
-<script src="{{site.baseurl}}/assets/js/instantclick.min.js" data-no-instant></script>
-    <script data-no-instant>
-      InstantClick.on("change", () => {
-        hljs.highlightAll();
-        // support markdown rendering
-        const prose = document.getElementsByClassName("prose")[0];
-
-        // handle nav
-        const menu = document.getElementById("navbar");
-        menu.addEventListener("click", () => {
-          menu.classList.toggle("hidden");
-          menu.classList.toggle("block");
-        });
-      });
-
-      InstantClick.init("mousedown");
-</script>
+  </script>
 </html>
