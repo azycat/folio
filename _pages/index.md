@@ -14,7 +14,7 @@ permalink: /
 
 I'm `azy`, a computer science student fascinated by digital and neural systems. My love lies in the intersection between computers, brains, and cognition.
 
-Besides studying, I've written some software (mostly Python, Java, some C) and created [some games](https://cureja.itch.io/) with my friends. Currently, I work as a volunteer programmer at the UBC Djavad Mowafaghian Centre for Brain Health, developing innovative AI tools to assist in clinical psychiatry
+Besides studying, I've written some software (mostly Python, Java, some C) and created [some games](https://cureja.itch.io/) with my friends. Currently, I work as a volunteer programmer at the UBC [Djavad Mowafaghian Centre for Brain Health](https://www.centreforbrainhealth.ca/), developing innovative AI tools to assist in clinical psychiatry
 
 In my spare time, I like messing with retro computers, researching pointless topics, and making my life harder trying to make my life easier with technology. It's a noble pursuit.
 

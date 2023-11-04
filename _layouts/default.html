@@ -16,7 +16,10 @@
   </head>
 
   <body class="mx-auto max-w-prose">
-    <div class="pb-4 pt-12">{{ content }}</div>
+    <div class="pb-4 pt-12">
+    {% if site.show-nav-menu %} {% include nav.html%} {% endif %}
+    {{ content }}
+    </div>
 
     <!-- improve click latency -->
     <script
@@ -38,6 +41,6 @@
     </script>
   </body>
 
-    <!-- additional theming scripts -->
+  <!-- additional theming scripts -->
   <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
 </html>

@@ -5,7 +5,7 @@ tags: game python streamlit coursework
 youtube: B-DqJgZcLjA
 ---
 
-Final project for my Computer Networking class to demonstrate TCP socket programming. Inspired by _Kahoot!_, our group made a multiplayer trivia game using Python and Streamlit.
+Final project for my Computer Networking class to demonstrate TCP socket programming. Our group made a multiplayer trivia game inspired by _Kahoot!_.
 
 ## Game Overview
 

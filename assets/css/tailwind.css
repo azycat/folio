@@ -1133,6 +1133,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.8571429em;
 }
 
+/* inline code */
 .prose :where(code):not(:where([class~='not-prose'] *)) {
   color: #dd1144;
   font-weight: 400;
@@ -1146,6 +1147,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: var(--tw-prose-links);
 }
 
+/* code block */
 .prose :where(pre):not(:where([class~='not-prose'] *)) {
   color: #1f2933;
   background-color: #f3f3f3;

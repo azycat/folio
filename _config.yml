@@ -5,7 +5,8 @@ baseurl: '/folio'
 url: 'https://azycat.github.io'
 
 # color theme for links
-theme-color: pink # indigo|yellow|pink|green|stone|
+# indigo|yellow|pink|green|stone|
+# theme-color: indigo
 
 # homepage information
 author: azycat
@@ -35,7 +36,7 @@ defaults:
   - scope:
       path: '_projects/*.md'
     values:
-      layout: 'project'
+      layout: 'post'
       sticky: false
 
 width: large
@@ -53,3 +54,4 @@ exclude:
   - Gemfile.lock
   - package.json
   - README.md
+  - _layouts/archive/

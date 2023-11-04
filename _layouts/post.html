@@ -2,9 +2,7 @@
 layout: default
 ---
 
-{% if site.show-nav-menu %} {% include nav.html%} {% endif %}
-
-<div class="px-4 pt-4 prose prose-{{site.theme-color}}">
+<div class="prose px-4 pt-4">
   <h1 class="mb-6 mt-6 text-center">{{ page.title }}</h1>
   <div class="text-center">
     {% if page.tags.size !=0 %}
@@ -19,7 +17,36 @@ layout: default
     </div>
     {% endfor %} {% endif %}
   </div>
-  {{content}}
-</div>
 
-{% include footer.html %}
+  <div class="pb-4">
+    {% if page.hasThumbnail %}
+    <img
+      loading="lazy"
+      src="/assets/images/projects/{{ page.name | remove: '.md' }}.webp"
+      class="rounded-xl{% if page.ignorePreviewAspect != true %} sm:aspect-video{% endif %} mx-auto"
+    />
+    {% elsif page.youtube %}
+    <div class="pt-12">
+      <div class="video-container">
+        <iframe
+          width="80%"
+          src="https://www.youtube.com/embed/{{ page.youtube }}"
+          frameborder="0"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+    </div>
+    {% elsif page.github %} {% assign image = page.github | prepend:
+    "https://opengraph.githubassets.com/$/" | hashsert %}
+    <img
+      loading="lazy"
+      src="{{ image }}"
+      class="mx-auto rounded-xl sm:aspect-video"
+    />
+    {% endif %}
+  </div>
+  <!-- markdown content -->
+  {{content}} {% include footer.html %}
+</div>
