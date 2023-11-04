@@ -50,7 +50,7 @@ jobs:
           ### If the jekyll website source is not in root, specify the directory. (in this case, sample_site)
           ### By default, this is not required as the action searches for a _config.yml automatically.
           #
-          # jekyll_env: development
+          jekyll_env: 'production'
           ### If you need to specify `JEKYLL_ENV` environment variable or `jekyll.environment` Liquid variable, specify it here.
           #
           # gem_src: sample_site
