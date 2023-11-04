@@ -1,20 +1,20 @@
 {
-	"name": "folio",
-	"version": "1.0.0",
-	"main": "index.js",
-	"repository": "https://github.com/azycat/folio.git",
-	"author": "azycat",
-	"license": "MIT",
-	"devDependencies": {
-		"@tailwindcss/typography": "^0.5.10",
-		"autoprefixer": "^10.4.16",
-		"postcss": "^8.4.31",
-		"postcss-cli": "^10.1.0",
-		"tailwindcss": "^3.3.3"
-	},
-	"dependencies": {
-		"@fontsource/inter": "^5.0.13",
-		"prettier": "^3.0.3",
-		"prettier-plugin-tailwindcss": "^0.5.6"
-	}
+  "name": "folio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/azycat/folio.git",
+  "author": "azycat",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.0.13",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6"
+  }
 }

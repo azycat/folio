@@ -4,10 +4,18 @@ title: /projects/
 permalink: projects
 ---
 
+```
+
+
+                                             |\__/,|   (`\
+                                           _.|o o  |_   ) )
+    my projects                        ---(((---(((---------
+```
+
 <div>
   {% assign projects = site.projects | sort: 'date' | reverse %}
   {% for project in projects %}
-    <div class="py-1">
+    <div class="pb-1">
       <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
         </h3>
       <div class="text-sm text-gray-400">{{project.date | date: "%B %-d, %Y"}}

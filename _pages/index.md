@@ -1,19 +1,20 @@
 ---
 layout: page
-title: "~"
+title: '~'
 permalink: /
 ---
+
 ```
-  _.-|   |          |\__/,|   (`\
+ _.-|   |          |\__/,|   (`\
 {   |   |          |o o  |__ _) )
  "-.|___|        _.( T   )  `  /
   .--'-`-.     _((_ `^--' /_<  \
 .+|______|__.-||__)`-'(((/  (((/                    azycat at work
 ```
 
-I'm `azy`, a programmer fascinated by digital and neural systems. My love lies in the intersection between computers, brains, and cognition.
+I'm `azy`, a computer science student fascinated by digital and neural systems. My love lies in the intersection between computers, brains, and cognition.
 
-Besides that, I've written some software (mostly Python, Java, some C) and created [some games](https://cureja.itch.io/). Currently, I'm developing AI tools to assist in clinical psychiatry at the UBC Djavad Mowafaghian Centre for Brain Health.
+Besides studying, I've written some software (mostly Python, Java, some C) and created [some games](https://cureja.itch.io/) with my friends. Currently, I work as a volunteer programmer at the UBC Djavad Mowafaghian Centre for Brain Health, developing innovative AI tools to assist in clinical psychiatry
 
 In my spare time, I like messing with retro computers, researching pointless topics, and making my life harder trying to make my life easier with technology. It's a noble pursuit.
 

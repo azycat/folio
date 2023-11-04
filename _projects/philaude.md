@@ -14,7 +14,7 @@ It is a body of knowledge spanning over centuries, which unfortunately brings wi
 
 <u>My question was thus:</u> How can we bring these ideas into the modern age, while preserving the author’s original words?
 
-## Introducing Philaude
+# Introducing Philaude
 
 **Philaude** (short for “philosophiclaude”) is an AI-powered reading assistant that aims to lower the barrier of entry to philosophical literature. This project uses Claude AI’s language processing and large context capacity to make these works accessible for modern readers.
 
