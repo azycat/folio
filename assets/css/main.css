@@ -33,12 +33,11 @@
 }
 
 .link-block {
-  @apply inline-block no-underline;
+  @apply inline-block !no-underline;
 }
 
 .link-block:hover {
   background-size: 0% 0rem;
-  text-decoration-line: none;
 }
 
 .link-button {
