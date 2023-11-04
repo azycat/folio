@@ -1,0 +1,29 @@
+locllm:
+  name: LocLLM
+  excerpt: 'Open-source, privacy-focused LLM tools for streamlining clinical documentation.'
+  stack: ['Python', 'Langchain', 'Llama-2']
+
+trivia:
+  name: Multiplayer Trivia
+  excerpt: 'Real-time online multiplayer game with dedicated game server.'
+  stack: ['Python', 'Streamlit', 'Shell']
+
+notabot:
+  name: Not a Bot!
+  excerpt: 'Nostalgic, old-web inspired clicker game with chill beats and silly graphics.'
+  stack: ['Unity', 'C#', 'Photoshop']
+
+philaude:
+  name: Philosophiclaude
+  excerpt: 'Simple web reader to discuss philosophy classics with Anthropic Claude.'
+  stack: ['Javascript', 'Anthropic', 'React']
+
+civil:
+  name: Team Civil Engineers
+  excerpt: 'Seasonal game development team.'
+  stack: ['Unity', 'C#']
+
+folio:
+  name: Markdown 'Folio
+  excerpt: 'Responsive personal portfolio page using Jekyll, TailwindCSS, and Github APIs.'
+  stack: ['Javascript']

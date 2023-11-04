@@ -1,0 +1,11 @@
+<a href="{{ site.baseurl }}/projects/{{ project[0] }}" class="link-block">
+  <div class="project">
+    <span class="text-lg">{{ project[1].name }} &gt;</span>
+    <p class="mt-2 text-slate-500">{{ project[1].excerpt }}</p>
+    <div class="mt-2">
+      {% for tech in project[1].stack %}
+      <span class="tag">{{ tech }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</a>

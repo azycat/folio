@@ -4,10 +4,6 @@ description: azycat's portfolio
 baseurl: '/folio'
 url: 'https://azycat.github.io'
 
-# color theme for links
-# indigo|yellow|pink|green|stone|
-# theme-color: indigo
-
 # homepage information
 author: azycat
 author-bio: 'protoplasmal primordial atomic globule' # change to false to hide
@@ -29,7 +25,7 @@ resume-external: false
 # pagination
 collections:
   projects:
-    permalink: /project/:name
+    permalink: /projects/:name
     output: true
 
 defaults:
@@ -43,6 +39,9 @@ width: large
 
 footer-msg: 'azycat'
 footer-msg-link: mailto:azycat@icloud.com
+
+plugins:
+  - jekyll-postcss
 
 include:
   - _pages

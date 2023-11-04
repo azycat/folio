@@ -1,5 +1,5 @@
 ---
-title: 'Civil Engineers: Game Dev Team'
+title: 'Team Civil Engineers'
 date: 2022-07-24
 tags: game game-jam
 links:

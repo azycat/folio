@@ -1,11 +1,19 @@
+---
+---
+
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
 
 @layer base {
-  body {
-    @apply bg-indigo-700 dark:bg-zinc-900 dark:text-white;
+  * {
+    -webkit-tap-highlight-color: transparent;
   }
+
+  body {
+    @apply bg-slate-50;
+  }
+
   main {
     @apply mx-6 mt-32 max-w-4xl lg:mx-auto;
   }
@@ -24,6 +32,23 @@
   height: 100%;
 }
 
+.link-block {
+  @apply inline-block no-underline;
+}
+
+.link-block:hover {
+  background-size: 0% 0rem;
+  text-decoration-line: none;
+}
+
 .link-button {
-  @apply underline-none rounded-lg border-2 border-zinc-900 text-sm text-zinc-900 transition-all duration-100 hover:scale-110 dark:border-gray-300 dark:text-white;
+  @apply link-block rounded-lg border-2 border-zinc-900 text-sm text-zinc-900 transition-all duration-100 hover:scale-110;
+}
+
+.tag {
+  @apply rounded-md bg-indigo-100 px-1.5 py-1 text-xs text-indigo-800;
+}
+
+.project {
+  @apply mx-2 flex flex-col justify-center rounded-lg border-2 border-transparent p-4 hover:border-zinc-900;
 }
