@@ -1,6 +1,6 @@
 locllm:
   name: LocLLM
-  excerpt: 'Open-source, privacy-focused LLM tools for streamlining clinical documentation.'
+  excerpt: 'Open-source, privacy-focused local LLM tools for streamlining clinical documentation.'
   stack: ['Python', 'Langchain', 'Llama-2']
 
 trivia:
@@ -10,7 +10,7 @@ trivia:
 
 notabot:
   name: Not a Bot!
-  excerpt: 'Nostalgic, old-web inspired clicker game with chill beats and silly graphics.'
+  excerpt: 'Nostalgic, old-web inspired clicker game with chill beats and colorful graphics.'
   stack: ['Unity', 'C#', 'Photoshop']
 
 philaude:
@@ -20,7 +20,7 @@ philaude:
 
 civil:
   name: Team Civil Engineers
-  excerpt: 'Seasonal game development team.'
+  excerpt: 'Casual, seasonal game design and development team.'
   stack: ['Unity', 'C#']
 
 folio:

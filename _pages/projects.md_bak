@@ -13,18 +13,17 @@ permalink: projects
 ```
 
 <div>
-  {% assign projects = site.projects | sort: 'date' | reverse %}
-  {% for project in projects %}
+  {% for project in site.data.projects %}
     <div class="pb-1">
-      <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a>
+      <h3><a href="{{ site.baseurl }}{{ project.url }}">{{ project[0] }}</a>
         </h3>
       <div class="text-sm text-gray-400">
-
+    <p class="text-sm text-slate-500">{{ project[1].excerpt }}</p>
     {% if page.tags.size !=0 %}
       <i class="text-xs fas fa-tags"></i>
-    {% for tag in project.tags %}
+    {% for tag in project[1].stack %}
       <div class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-indigo-100 text-indigo-800">
-        <a class="!no-underline" href="{{site.baseurl}}/tag#{{ tag }}">{{ tag }}</a>
+        <a class="!no-underline" href="{{site.baseurl}}/tag#{{ tag }}">{{ tech }}</a>
       </div>
     {% endfor %}
     {% endif %}

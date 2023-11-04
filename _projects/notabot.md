@@ -36,7 +36,7 @@ While promoting our game, I got to interact with many other talented developers 
 
 ## My Thoughts
 
-I got to lead the design for the first time! Even though we weren't entirely sure that clicking captchas could turn out to be "fun", I wanted to challenge my team and I to pursue an experimental idea.
+I got to lead the design for the first time! Even though we weren't entirely sure that clicking captchas could turn out to be "fun", I wanted to challenge my team and I to pursue an experimental idea. It ended up being our best game yet, and I'm proud to see that it was well-loved by the community.
 
 My goal was to recreate a few nostalgic web experiences: snagging limited goods from online stores, downloading shady programs off the web, and getting frustrated by popups and impossible captchas.
 
