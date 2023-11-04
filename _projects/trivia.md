@@ -1,34 +1,36 @@
 ---
-layout: post
-title: "Multiplayer Trivia"
-tags: game coursework
+title: 'Multiplayer Trivia'
+date: 2023-08-23
+tags: game python streamlit coursework
+youtube: B-DqJgZcLjA
 ---
 
-*//TODO add video demo*
-
-This was the final project for my Computer Networking class to demonstrate TCP Socket programming. Our group made a multiplayer trivia game inspired by *Kahoot!*, builr using Python.
+Final project for my Computer Networking class to demonstrate TCP socket programming. Inspired by _Kahoot!_, our group made a multiplayer trivia game using Python and Streamlit.
 
 ## Game Overview
-- <u>Lobby Phase</u>
-    - Room supports up to 2-5 players
-    - One player voted as the Host.
-    - Game starts when all players click "Ready".
-- <u>Gameplay Phase</u>
-    - Each round, a question is displayed to all non-host players.
-    - Whoever presses their **buzzer** first gets to answer.
-    - Answering stage is time-sensitive. If player takes too long, then the buzzer gets freed.
-    - Host reviews all answers. If correct, move onto the next question.
-    - Game continues until a player reaches ten points, or no questions left.
 
-## My Contributions
+- <u>Lobby Phase</u>
+  - Room supports up to 2-5 players
+  - One player voted as the Host.
+  - Game starts when all players click "Ready".
+- <u>Gameplay Phase</u>
+  - Each round, a question is displayed to all non-host players.
+  - Whoever presses their **buzzer** first gets to answer.
+  - Answering stage is time-sensitive. If player takes too long, then the buzzer gets freed.
+  - Host reviews all answers. If correct, move onto the next question.
+  - Game continues until a player reaches ten points, or no questions left.
+
+## Contributions
+
 - Created the GUI, UX, and screen flow (see below).
 - Created communication protocols between server backend and the client frontends, including establishment of initial connection and listening queues that load incoming updates to/from the GUI.
 - Designed messaging scheme: send/answer data requests, process and pass data between sockets using "tokens", notify all clients of logical state updates.
 - Designed and implemented underlying application logic for Lobby and Gameplay loops. Handled state transitions in the server and forwarded updates to the client.
 - Debugging, refactoring, repo management, resolving merge conflicts.
 
-## Streamlit GUI
-I created the GUI front-end for the client applications using the **Streamlit** framework. Creating a multi-threaded game requiring real-time updates between the server and clients presented a big challenge.
+### Streamlit GUI
+
+I created the GUI front-end for the client applications using the **Streamlit** framework. Creating a multi-threaded game presented a big challenge, requiring real-time updates between the server and clients.
 
 Streamlit redraws the entire screen each time its internal session state is changed. However, any changes to the session state made outside of the web server's single thread are not reflected in the display.
 
@@ -41,6 +43,7 @@ This project required me to develop a deeper understanding of threading and even
 After many hours of testing, I finally got it working!
 
 ## Conclusion
+
 There's something so satisfying about seeing the parts you've designed come together like a well-oiled machine. I love watching the server and clients working in tandem, passing objects back and forth through open sockets.
 
 Overall, I'm super proud of how our game turned out. I was able to experiment with Streamlit and push its functionalities beyond what was thought to be possible. When I have the time, I'd like to write a detailed guide for creating multi-threaded Streamlit web apps. I saw many others facing similar problems during my research, and I'd like to be able to help them achieve my results.
