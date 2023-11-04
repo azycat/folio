@@ -1,0 +1,17 @@
+name: Jekyll Action TS
+on:
+  push:
+    branches:
+      - master
+      # - source
+      # It is highly recommended that you only run this action on push to a
+      # specific branch, eg. master or source (if on *.github.io repo)
+
+  workflow_dispatch: # Allows a run of this workflow to be triggerred manually from the Actions tab
+jobs:
+  jekyll:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Jekyll Action TS
+          uses: limjh16/jekyll-action-ts@v2
+            
