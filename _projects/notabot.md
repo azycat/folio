@@ -8,7 +8,7 @@ Nostalgic, old-web inspired clicker game. [Play it on itch.io](https://cureja.it
 
 ![gameplay screenshot]({{site.baseurl}}/assets/img/notabot.png)
 
-Submission for [Ludum Dare 2023](https://ldjam.com/events/ludum-dare/53/not-a-bot), created with [my game dev team]({{ site.baseurl }}/projects/civil).
+Submission for [Ludum Dare 2023](https://ldjam.com/events/ludum-dare/53/not-a-bot), created with my [game dev team]({{ site.baseurl }}/projects/civil).
 
 ## Game Overview
 

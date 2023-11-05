@@ -17,6 +17,7 @@ code.hljs {
 .hljs {
   color: #adbac7;
   background: #22272e;
+  line-height: 1.3142857;
 }
 .hljs-doctag,
 .hljs-keyword,
