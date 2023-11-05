@@ -10,12 +10,12 @@ trivia:
 
 notabot:
   name: Not a Bot!
-  excerpt: 'Nostalgic, old-web inspired clicker game with chill beats and colorful graphics.'
+  excerpt: 'Nostalgic, old-web inspired clicker game with colorful graphics and chill beats.'
   stack: ['Unity', 'C#', 'Photoshop']
 
 philaude:
   name: Philosophiclaude
-  excerpt: 'Simple web reader to discuss philosophy classics with Anthropic Claude.'
+  excerpt: 'Simple integrated chat and web reader to discuss philosophy classics with Claude AI.'
   stack: ['Javascript', 'Anthropic', 'React']
 
 civil:

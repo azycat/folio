@@ -7,7 +7,7 @@
 
     <!-- TailwindCSS -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css" />
+    <!-- <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css" /> -->
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
@@ -18,8 +18,9 @@
 
   <body class="mx-auto max-w-prose">
     <div class="pb-4 pt-12">
-    {% if site.show-nav-menu %} {% include nav.html%} {% endif %}
+    {% if site.show-nav-menu %} {% include nav.html %} {% endif %}
     {{ content }}
+    {% include footer.html %}
     </div>
 
     <!-- improve click latency -->

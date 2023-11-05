@@ -12,7 +12,7 @@ permalink: projects
     my projects                        ---(((---(((---------
 ```
 
-<div class="projects grid grid-flow-row grid-cols-1 sm:grid-cols-2">
+<div class="projects grid grid-flow-row grid-cols-4 sm:grid-cols-2">
   {% for project in site.data.projects %}
     {% include project.html %}
   {% endfor %}

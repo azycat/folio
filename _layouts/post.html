@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="prose px-4 pt-4">
+<div class="prose px-4 pt-4 prose-img:mx-auto">
   <h1 class="mb-6 mt-6 text-center">{{ page.title }}</h1>
   <div class="text-center">
     {% if page.tags.size !=0 %}
@@ -48,5 +48,5 @@ layout: default
     {% endif %}
   </div>
   <!-- markdown content -->
-  {{content}} {% include footer.html %}
+  {{content}}
 </div>

@@ -41,7 +41,7 @@
 }
 
 .link-button {
-  @apply link-block rounded-lg border-2 border-zinc-900 text-sm text-zinc-900 transition-all duration-100 hover:scale-110;
+  @apply link-block rounded-lg border-2 border-zinc-900 text-sm text-zinc-900 transition-all duration-100 hover:scale-105;
 }
 
 .tag {
