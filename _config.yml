@@ -39,8 +39,8 @@ width: large
 footer-msg: 'azycat'
 footer-msg-link: mailto:azycat@icloud.com
 
-plugins:
-  - jekyll-postcss
+# plugins:
+#   - jekyll-postcss
 
 include:
   - _pages
